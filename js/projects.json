@@ -1,0 +1,15 @@
+[{
+        "id": "Ejemplo1",
+        "name": "Ejemplo 1",
+        "title": "Proyecto de Ejemplo",
+        "description": "Esta es la descripcion de ejemplo del proyecto.",
+        "link": "#1"
+    },
+    {
+        "id": "LM-32",
+        "name": "SoftCore LM32",
+        "title": "Documentation and Implementation of SoftCore LM32 in a FPGA",
+        "description": "As the final project in the major of Electronical Engineering, the Soft-Processor LatticeMico 32 was implemented on a Quartus FPGA. Additionally, all its functionalities and characteristics were documented, as well as a couple of start tutorials.",
+        "link": "http://www.coffeebrain.org/wiki/index.php?title=SoftCore_LM32"
+    }
+]

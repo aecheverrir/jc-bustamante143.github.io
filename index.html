@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Head  Declaration-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Page Title -->
     <title>Juan Camilo Bustamante A.</title>
+
+    <!-- Fonts and CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
@@ -16,6 +21,7 @@
 <body>
 
     <div class="container-fluid">
+        <!-- Header and NavBar -->
         <header>
             <div class="row">
                 <p class="col-sm-2"></p>
@@ -29,10 +35,11 @@
             </div>
         </header>
 
+        <!-- Main Section -->
         <section id="main">
             <div class="row">
 
-                <!-- Slide de fotos -->
+                <!-- Photo Carousel -->
                 <div class="col-sm-6">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
@@ -68,7 +75,7 @@
                     </div>
                 </div>
 
-                <!-- Parrafo con perfil (letra color negro) -->
+                <!-- Initial Profile-->
                 <div class="col-sm-5">
                     <p>I'm an electronic engineer and soon to be computer engineer. Technology and devices that can help and
                         change people's live are the things that thrive me. Football is my biggest passion, and the stadium
@@ -81,9 +88,12 @@
         </section>
 
         <section id="AboutMe">
+            <!-- Header -->
             <h2 class="sectionTitle">About Me</h2>
+
+            <!-- Section / Personal -->
             <div class="row">
-                <h2> Personal Topics - What I Like</h2>
+                <h3> Personal Topics - What I Like</h3>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -121,8 +131,10 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Section / Professional -->
             <div class="row">
-                <h2> Professional Topics - Areas of Interest</h2>
+                <h3> Professional Topics - Areas of Interest</h3>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -161,9 +173,12 @@
         </section>
 
         <section id="Skills">
+            <!-- Header -->
             <h2 class="sectionTitle">Skills</h2>
             <div class="container">
                 <div class="row">
+
+                    <!-- Java Skill: 90% -->
                     <div class="col-md-4 col-sm-6">
                         <div class="progress java">
                             <span class="progress-left">
@@ -175,6 +190,8 @@
                             <div class="progress-value">Java</div>
                         </div>
                     </div>
+
+                    <!-- Verilog Skill: 75% -->
                     <div class="col-md-4 col-sm-6">
                         <div class="progress verilog">
                             <span class="progress-left">
@@ -186,6 +203,8 @@
                             <div class="progress-value">Verilog</div>
                         </div>
                     </div>
+
+                    <!-- Python Skill: 50% -->
                     <div class="col-md-4 col-sm-6">
                         <div class="progress python">
                             <span class="progress-left">
@@ -197,6 +216,8 @@
                             <div class="progress-value">Python</div>
                         </div>
                     </div>
+
+                    <!-- HTML Skill: 75% -->
                     <div class="col-md-4 col-sm-6">
                         <div class="progress html">
                             <span class="progress-left">
@@ -208,6 +229,8 @@
                             <div class="progress-value">HTML</div>
                         </div>
                     </div>
+
+                    <!-- SQL Skill: 75% -->
                     <div class="col-md-4 col-sm-6">
                         <div class="progress sql">
                             <span class="progress-left">
@@ -219,6 +242,8 @@
                             <div class="progress-value">SQL</div>
                         </div>
                     </div>
+
+                    <!-- JavaScript Skill: 50% -->
                     <div class="col-md-4 col-sm-6">
                         <div class="progress js">
                             <span class="progress-left">
@@ -232,61 +257,62 @@
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
 
-            <section id="Projects">
-                <h2 class="sectionTitle">Projects</h2>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <ul>
-                            <li>Softcore LM32</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-9">Descripcipn y link de proyecto</div>
+        <section id="Projects">
+            <!-- Header -->
+            <h2 class="sectionTitle">Projects</h2>
+            <div class="row project-content">
+                <!-- List of Projects -->
+                <div class="col-sm-3 project-name form-line">
+                    <ul id="projectLists"> </ul>
                 </div>
-            </section>
+                <!-- Project Detail -->
+                <div class="col-sm-9 project-description"> </div>
+            </div>
+        </section>
 
-            <section id="Contact">
-                <div class="section-content">
-                    <h2 class="section-header">Contact Me </h2>
-                    <h3>Leave your message and I'll contact you as soon as possible.</h3>
-                </div>
-                <div class="contact-section">
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6 form-line">
-                                <div class="form-group">
-                                    <label for="exampleInputUsername">Your name</label>
-                                    <input type="text" class="form-control" id="" placeholder=" Enter Name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail">Email Address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="telephone">Contact Number</label>
-                                    <input type="tel" class="form-control" id="telephone" placeholder=" Enter your contact no.">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="description"> Message</label>
-                                    <textarea class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-default submit">
-                                        <i class="fa fa-paper-plane" aria-hidden="true"></i> Send Message</button>
-                                </div>
+        <section id="Contact">
+            <div class="section-content">
+                <h2 class="section-header">Contact Me </h2>
+                <h3>Leave your message and I'll contact you as soon as possible.</h3>
+            </div>
+            <div class="contact-section">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div>
+                                <a href="https://www.facebook.com/JuanBusho" class="btn btn-default submit" id="#mailBtn">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>  Facebook</a>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </section>
+                        <div class="col-sm-3">
+                            <div>
+                                <a href="https://twitter.com/JuanBusho" class="btn btn-default submit" id="#mailBtn">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>  Twitter</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div>
+                                <a href="https://github.com/jc-bustamante143" class="btn btn-default submit" id="#mailBtn">
+                                    <i class="fa fa-github-square" aria-hidden="true"></i>  GitHub</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div>
+                                <a href="mailto:juanc_bustamante_@hotmail.com" class="btn btn-default submit" id="#mailBtn">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>    Send Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="./js/main.js"></script>
 
 </body>
 

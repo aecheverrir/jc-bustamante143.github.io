@@ -10,6 +10,8 @@ header {
     background-color: #008E4F;
 }
 
+/* Header Section */
+
 header a {
     color: #FFFFFF;
     padding: 0 20px;
@@ -51,9 +53,11 @@ section {
     margin: 35px 30px;
     font-family: 'Teko', sans-serif;
     font-weight: 700;
-    align-items: center;
+    text-align: center;
     color: whitesmoke
 }
+
+/* Main Section */
 
 #main {
     padding: 20px 20px;
@@ -67,21 +71,22 @@ section {
     text-align: center;
     font-size: 1.8em;
     font-family: 'Teko', sans-serif;
-    vertical-align: 10%;
     color: #FFFFFF;
-    margin: 50px 5px;
+    margin: 50px 15px;
 }
+
+/* AboutMe Section */
 
 #AboutMe {
     padding: 0px 85px;
 }
 
-#AboutMe h2{
+#AboutMe h3 {
     color: #FFFFFF;
     margin: 30px 0px;
     font-weight: 400;
     font-size: 3em;
-    text-align: center;    
+    text-align: left;
     font-family: 'Teko', sans-serif;
     text-decoration: underline;
 }
@@ -117,9 +122,35 @@ section {
     width: 50%;
 }
 
+/* Projects Section */
+
 #Projects {
-    background-color: whitesmoke;
     padding: 20px 20px;
+}
+
+#Projects .project-name {
+    background-color: #FFFFFF;
+    color: #122419;
+    font-family: 'Teko', sans-serif;
+    font-size: 1em;
+    padding: 10px 10px;
+}
+
+#Projects .project-content {
+    background-color: #FFFFFF;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5em;
+    padding: 20px 20px;
+}
+
+#Projects .project-description h3 {
+    text-decoration: underline;
+}
+
+#Projects .project-name li:hover {
+    background-color: #122419;
+    color: #FFFFFF;
+    opacity: 0.5;
 }
 
 /*Contact sectiom*/
@@ -134,7 +165,7 @@ section {
     background: #122419;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    margin: 0 0 50px 0 ;
+    margin: 0 0 50px 0;
 }
 
 .contact-section {
@@ -162,18 +193,19 @@ label {
 
 textarea.form-control {
     height: 135px;
-    /* margin-top: px;*/
 }
 
 .submit {
     font-size: 1.1em;
-    float: right;
+    float: center;
     width: 150px;
     background-color: transparent;
     color: #fff;
 }
 
-.progress{
+/* Skills Section */
+
+.progress {
     width: 150px;
     height: 150px;
     line-height: 150px;
@@ -182,9 +214,9 @@ textarea.form-control {
     box-shadow: none;
     position: relative;
     font-family: 'Teko', sans-serif;
-    
 }
-.progress:after{
+
+.progress:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -194,7 +226,8 @@ textarea.form-control {
     top: 0;
     left: 0;
 }
-.progress > span{
+
+.progress>span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -202,10 +235,12 @@ textarea.form-control {
     top: 0;
     z-index: 1;
 }
-.progress .progress-left{
+
+.progress .progress-left {
     left: 0;
 }
-.progress .progress-bar{
+
+.progress .progress-bar {
     width: 100%;
     height: 100%;
     background: none;
@@ -214,7 +249,8 @@ textarea.form-control {
     position: absolute;
     top: 0;
 }
-.progress .progress-left .progress-bar{
+
+.progress .progress-left .progress-bar {
     left: 100%;
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -222,10 +258,12 @@ textarea.form-control {
     -webkit-transform-origin: center left;
     transform-origin: center left;
 }
-.progress .progress-right{
+
+.progress .progress-right {
     right: 0;
 }
-.progress .progress-right .progress-bar{
+
+.progress .progress-right .progress-bar {
     left: -100%;
     border-top-left-radius: 80px;
     border-bottom-left-radius: 80px;
@@ -234,7 +272,8 @@ textarea.form-control {
     transform-origin: center right;
     animation: loading-1 1.8s linear forwards;
 }
-.progress .progress-value{
+
+.progress .progress-value {
     width: 90%;
     height: 90%;
     border-radius: 50%;
@@ -248,87 +287,80 @@ textarea.form-control {
     left: 5%;
 }
 
+.progress .progress-bar {
+    border-color: #049dff;
+}
 
-.progress.java .progress-left .progress-bar{
+.progress.java .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.8s;
 }
 
-.progress.python .progress-left .progress-bar{
+.progress.python .progress-left .progress-bar {
     animation: loading-4 1s linear forwards 1.8s;
 }
 
-.progress .progress-bar{
-    border-color: #049dff;
-}
-.progress.js .progress-left .progress-bar{
+.progress.js .progress-left .progress-bar {
     animation: loading-4 0.4s linear forwards 1.8s;
 }
 
-
-.progress.verilog .progress-left .progress-bar{
+.progress.verilog .progress-left .progress-bar {
     animation: loading-3 1.2s linear forwards 1.8s;
 }
 
-
-.progress.html .progress-left .progress-bar{
+.progress.html .progress-left .progress-bar {
     animation: loading-3 1.5s linear forwards 1.8s;
 }
 
-
-.progress.sql .progress-left .progress-bar{
+.progress.sql .progress-left .progress-bar {
     animation: loading-3 1.5s linear forwards 1.8s;
 }
 
-@keyframes loading-1{
-    0%{
+@keyframes loading-1 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
     }
 }
-@keyframes loading-2{
-    0%{
+
+@keyframes loading-2 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(144deg);
         transform: rotate(144deg);
     }
 }
-@keyframes loading-3{
-    0%{
+
+@keyframes loading-3 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
     }
 }
-@keyframes loading-4{
-    0%{
+
+@keyframes loading-4 {
+    0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         -webkit-transform: rotate(36deg);
         transform: rotate(36deg);
     }
 }
-@keyframes loading-5{
-    0%{
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+
+@media only screen and (max-width: 990px) {
+    .progress {
+        margin-bottom: 20px;
     }
-    100%{
-        -webkit-transform: rotate(126deg);
-        transform: rotate(126deg);
-    }
-}
-@media only screen and (max-width: 990px){
-    .progress{ margin-bottom: 20px; }
 }
